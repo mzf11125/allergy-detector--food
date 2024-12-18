@@ -1,4 +1,7 @@
 // components/DesktopDetector.js
+"use client";
+
+
 import { useState } from "react";
 
 const DesktopDetector = ({ onDetect }) => {

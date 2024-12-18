@@ -1,4 +1,6 @@
 // components/MobileDetector.tsx
+"use client";
+
 import { useState } from "react";
 import CameraPhoto, { FACING_MODES } from "react-html5-camera-photo";
 import "react-html5-camera-photo/build/css/index.css";

@@ -1,4 +1,6 @@
 // pages/index.tsx
+"use client";
+
 import { useState, useEffect } from "react";
 import MobileDetector from "./Components/mobileDetector";
 import DesktopDetector from "./Components/desktopDetector";

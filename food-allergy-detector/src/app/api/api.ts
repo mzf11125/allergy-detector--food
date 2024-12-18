@@ -1,8 +1,12 @@
 // lib/geminiApi.ts
 import axios from "axios";
+import dotenv from "dotenv";
 
-const GEMINI_API_BASE_URL = "https://api.gemini.example.com"; // Replace with your API URL
-const API_KEY = process.env.GEMINI_API_KEY || "your-api-key"; // Use environment variable for better security
+
+dotenv.config();
+
+const GEMINI_API_BASE_URL = "https://api.gemini.com/v1/symbols/details/:symbol/detect-allergens"; // Replace with your API URL
+const API_KEY = process.env.GEMINI_API_KEY; // Use environment variable for better security
 
 interface AllergensResponse {
   allergens: string[];
